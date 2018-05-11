@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1A13B9D1-4114-4007-BD30-ACBBD756A39D}</ProjectGuid>
+    <ProjectGuid>{E42168F9-D12D-437B-AEEB-8D32D325DD0D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UniversityService</RootNamespace>
@@ -47,41 +47,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201803301942593_FirstMigration.cs" />
-    <Compile Include="Migrations\201803301942593_FirstMigration.Designer.cs">
-      <DependentUpon>201803301942593_FirstMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803302013426_SecondMigration.cs" />
-    <Compile Include="Migrations\201803302013426_SecondMigration.Designer.cs">
-      <DependentUpon>201803302013426_SecondMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803302030475_ThirdMigration.cs" />
-    <Compile Include="Migrations\201803302030475_ThirdMigration.Designer.cs">
-      <DependentUpon>201803302030475_ThirdMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201805111842144_FirstMigration.cs" />
+    <Compile Include="Migrations\201805111842144_FirstMigration.Designer.cs">
+      <DependentUpon>201805111842144_FirstMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="UniversityDbContext.cs" />
+    <Compile Include="UniverDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UniversityModel\UniversityModel.csproj">
-      <Project>{f3e70258-8714-44e8-841a-987c28a9fb48}</Project>
-      <Name>UniversityModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803301942593_FirstMigration.resx">
-      <DependentUpon>201803301942593_FirstMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803302013426_SecondMigration.resx">
-      <DependentUpon>201803302013426_SecondMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803302030475_ThirdMigration.resx">
-      <DependentUpon>201803302030475_ThirdMigration.cs</DependentUpon>
+    <ProjectReference Include="..\University\UniversityModel.csproj">
+      <Project>{d0788de9-633f-4046-b0c2-0253acf66f02}</Project>
+      <Name>UniversityModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805111842144_FirstMigration.resx">
+      <DependentUpon>201805111842144_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

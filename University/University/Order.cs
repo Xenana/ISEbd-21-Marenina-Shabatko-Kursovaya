@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniversityModel
+namespace University
 {
-     public class Order
+    public class Order
     {
         public int Id { get; set; }
 
@@ -14,21 +14,23 @@ namespace UniversityModel
 
         public int ClientFIO { get; set; }
 
-        public int CourselId { get; set; }
+        public int CourseId { get; set; }
 
         public int CourseName { get; set; }
-     
+
         public int Count { get; set; }
 
-        public decimal Sum { get; set; }
+        public decimal Sum { get; set; } 
 
-        public decimal BalanceSum { get; set; }
+        public decimal BalanceSum { get; set; }  
 
         public PaymentState Status { get; set; }
 
         public DateTime DateCreate { get; set; }
 
-        public virtual Client Client { get; set; }   
+        //  public DateTime? DateImplement { get; set; } //
+
+        public virtual Client Client { get; set; }
 
         public virtual Course Course { get; set; }
     }

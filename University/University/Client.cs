@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace UniversityModel
+namespace University
 {
     public class Client
     {
@@ -16,7 +16,7 @@ namespace UniversityModel
         public string ClientFIO { get; set; }
 
         [Required]
-        public string ClientPassword  { get; set; }
+        public string ClientPassword { get; set; }
 
         [Required]
         public string ClientLogin { get; set; }
@@ -29,6 +29,5 @@ namespace UniversityModel
 
         [ForeignKey("ClientId")]
         public virtual List<Order> Orders { get; set; }
-
     }
 }

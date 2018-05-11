@@ -14,9 +14,5 @@ namespace UniversityModel
 
         [Required]
         public int value { get; set; } // значение 
-
-        public int IdStudy { get; set; } // идентификатор_обучения 
-
-        public int IdClient { get; set; } // идентификатор_студента 
     }
 }
