@@ -36,6 +36,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -47,13 +50,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BindingModels\ClientBindingModel.cs" />
+    <Compile Include="BindingModels\CourseBindingModel.cs" />
+    <Compile Include="BindingModels\OrderBindingModel.cs" />
+    <Compile Include="BindingModels\PaymentBindingModel.cs" />
+    <Compile Include="BindingModels\ReportBindingModel.cs" />
+    <Compile Include="Implementations\ClientServiceList.cs" />
+    <Compile Include="Implementations\CourseServiceList.cs" />
+    <Compile Include="Implementations\MainServiceList.cs" />
+    <Compile Include="Implementations\ReportService.cs" />
+    <Compile Include="Interfaces\IClientService.cs" />
+    <Compile Include="Interfaces\ICourseService.cs" />
+    <Compile Include="Interfaces\IMainService.cs" />
+    <Compile Include="Interfaces\IReportService.cs" />
     <Compile Include="Migrations\201805111934309_FirstMigration.cs" />
     <Compile Include="Migrations\201805111934309_FirstMigration.Designer.cs">
       <DependentUpon>201805111934309_FirstMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805112007164_SecondMigration.cs" />
+    <Compile Include="Migrations\201805112007164_SecondMigration.Designer.cs">
+      <DependentUpon>201805112007164_SecondMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805112023407_AddReportMigration.cs" />
+    <Compile Include="Migrations\201805112023407_AddReportMigration.Designer.cs">
+      <DependentUpon>201805112023407_AddReportMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UniverDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ClientViewModel.cs" />
+    <Compile Include="ViewModels\CourseViewModel.cs" />
+    <Compile Include="ViewModels\OrderViewModel.cs" />
+    <Compile Include="ViewModels\PaymentLoadModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UniversityModel\UniversityModel.csproj">
@@ -64,11 +97,23 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Resources\TIMCYR.TTF" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201805111934309_FirstMigration.resx">
       <DependentUpon>201805111934309_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805112007164_SecondMigration.resx">
+      <DependentUpon>201805112007164_SecondMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805112023407_AddReportMigration.resx">
+      <DependentUpon>201805112023407_AddReportMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
