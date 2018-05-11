@@ -23,9 +23,9 @@ namespace UniversityModel
 
         public decimal Bonus { get; set; }
 
-        public decimal Fine { get; set; } // штраф
+        public decimal Fine { get; set; }
 
-        public string Locking { get; set; } //Блокировка 
+        public string Locking { get; set; } 
 
         [ForeignKey("ClientId")]
         public virtual List<Order> Orders { get; set; }

@@ -10,9 +10,9 @@ namespace UniversityModel
 {
    public  class Payment
     {
-        public int Id { get; set; } // идентификатор 
+        public int Id { get; set; } 
 
         [Required]
-        public int value { get; set; } // значение 
+        public int value { get; set; }
     }
 }
