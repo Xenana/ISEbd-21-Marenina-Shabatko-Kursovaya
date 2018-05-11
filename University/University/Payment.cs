@@ -5,16 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniversityModel
+namespace University
 {
-    public class Admin
+    public class Payment
     {
-        public int Id { get; set; }
+        public int Id { get; set; }  
 
         [Required]
-        public string Login { get; set; }
-
-        [Required]
-        public string Password { get; set; }
+        public int Value { get; set; } 
     }
 }

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E4C5BC9-DA81-4528-B6F7-525F3994F23F}</ProjectGuid>
+    <ProjectGuid>{D0788DE9-633F-4046-B0C2-0253ACF66F02}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UniversityService</RootNamespace>
-    <AssemblyName>UniversityService</AssemblyName>
+    <RootNamespace>University</RootNamespace>
+    <AssemblyName>University</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,28 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201805111934309_FirstMigration.cs" />
-    <Compile Include="Migrations\201805111934309_FirstMigration.Designer.cs">
-      <DependentUpon>201805111934309_FirstMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="UniverDbContext.cs" />
+    <Compile Include="Admin.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Course.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="Payment.cs" />
+    <Compile Include="PaymentState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\UniversityModel\UniversityModel.csproj">
-      <Project>{b45280c2-3920-4eaa-9c22-82bef271d851}</Project>
-      <Name>UniversityModel</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201805111934309_FirstMigration.resx">
-      <DependentUpon>201805111934309_FirstMigration.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

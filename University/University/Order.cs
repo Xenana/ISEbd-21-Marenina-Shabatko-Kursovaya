@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UniversityModel
+namespace University
 {
     public class Order
     {
@@ -20,9 +20,9 @@ namespace UniversityModel
 
         public int Count { get; set; }
 
-        public decimal Sum { get; set; }
+        public decimal Sum { get; set; } 
 
-        public decimal BalanceSum { get; set; } 
+        public decimal BalanceSum { get; set; }  
 
         public PaymentState Status { get; set; }
 
