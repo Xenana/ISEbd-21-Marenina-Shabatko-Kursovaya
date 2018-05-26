@@ -75,6 +75,10 @@
     <Compile Include="Migrations\201805112023407_AddReportMigration.Designer.cs">
       <DependentUpon>201805112023407_AddReportMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805261451523_AddFieldClientMail.cs" />
+    <Compile Include="Migrations\201805261451523_AddFieldClientMail.Designer.cs">
+      <DependentUpon>201805261451523_AddFieldClientMail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -108,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805112023407_AddReportMigration.resx">
       <DependentUpon>201805112023407_AddReportMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805261451523_AddFieldClientMail.resx">
+      <DependentUpon>201805261451523_AddFieldClientMail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -13,6 +13,8 @@ namespace UniversityService.BindingModels
         public string ClientFIO { get; set; }
 
         public string ClientLogin { get; set; }
+        
+        public string ClientMail { get; set; }
 
         public string ClientPassword { get; set; }
     }

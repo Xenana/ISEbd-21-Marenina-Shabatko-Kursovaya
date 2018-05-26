@@ -93,5 +93,22 @@ namespace UniversityService.Implementations
                 throw new Exception("Элемент не найден");
             }
         }
+
+        public void Enroll(int id)
+        {
+            Order element = context.Orders.FirstOrDefault(rec => rec.Id == id);
+            if (element != null)
+            {
+                context.Orders.Add(new Order
+                {
+                    Sum = element.Sum,
+                    BalanceSum = element.BalanceSum,
+                    Status = element.Status,
+                    DateCreate = element.DateCreate,
+                    CourseName = element.CourseName,
+                });
+                context.SaveChanges();
+            }
+        }
     }
 }
