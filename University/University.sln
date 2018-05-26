@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityModel", "Universi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityService", "UniversityService\UniversityService.csproj", "{2E4C5BC9-DA81-4528-B6F7-525F3994F23F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityView", "UniversityView\UniversityView.csproj", "{06EF83AA-42D1-47D7-BFEB-86BDBC6CD1F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2E4C5BC9-DA81-4528-B6F7-525F3994F23F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E4C5BC9-DA81-4528-B6F7-525F3994F23F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E4C5BC9-DA81-4528-B6F7-525F3994F23F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06EF83AA-42D1-47D7-BFEB-86BDBC6CD1F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06EF83AA-42D1-47D7-BFEB-86BDBC6CD1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06EF83AA-42D1-47D7-BFEB-86BDBC6CD1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06EF83AA-42D1-47D7-BFEB-86BDBC6CD1F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
