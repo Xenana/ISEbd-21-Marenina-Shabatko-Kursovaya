@@ -21,6 +21,8 @@ namespace UniversityModel
         [Required]
         public string ClientLogin { get; set; }
 
+        public string ClientMail { get; set; }
+
         public decimal Bonus { get; set; }
 
         public decimal Fine { get; set; } 

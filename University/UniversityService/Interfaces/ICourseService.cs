@@ -19,5 +19,7 @@ namespace UniversityService.Interfaces
         void UpdElement(CourseBindingModel model);
 
         void DelElement(int id);
+
+        void Enroll(int id);
     }
 }
